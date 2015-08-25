@@ -1,0 +1,318 @@
+function photos(IDmp4) {
+  var output = "<object id=\"player\" width=\"850\" height=\"475\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" >";
+  output += "<param name=\"movie\" value=\"https://sites.google.com/site/animexgl/players/player.swf\" >";
+  output += "</param>";
+  output += "<param name=\"allowFullScreen\" value=\"true\" >";
+  output += "</param>";
+  output += "<param name=\"allowscriptaccess\" value=\"always\">";
+  output += "</param>";
+  output += "<embed flashvars=\"file=\http://llphotos.twitvid.com/twitvidvideosv2/1/" + IDmp4 + ".mp4&provider=video&stretching=exactfit&controlbar.position=over\" src=\"https://sites.google.com/site/animexgl/players/player.swf\"  type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"670\" height=\"400\">";
+  output += "</embed>";
+  output += "</object>";
+  document.write (output);
+}
+
+function photo(photo) {
+  var output = "<object id=\"player\" width=\"670\" height=\"400\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" >";
+  output += "<param name=\"movie\" value=\"https://sites.google.com/site/animexgl/players/player.swf\" >";
+  output += "</param>";
+  output += "<param name=\"allowFullScreen\" value=\"true\" >";
+  output += "</param>";
+  output += "<param name=\"allowscriptaccess\" value=\"always\">";
+  output += "</param>";
+  output += "<embed flashvars=\"file=" + photo + "&provider=video&stretching=exactfit&controlbar.position=over\" src=\"https://sites.google.com/site/animexgl/players/player.swf\"  type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"850\" height=\"475\">";
+  output += "</embed>";
+  output += "</object>";
+  document.write (output);
+}
+
+function descarga(link,peso) {
+document.write("<div id='tensei-descarga'><a href='"+link +"' alt='Descargar este capitulo' target='_blank' > </a> <span>"+peso+"</span></div>");
+}
+
+function otrocb(anterior,siguiente) {
+document.write("<center><div style='height:30px; margin-left:5px; margin-top:-25px;'><a class='tip' href='"+anterior +"' style='float: left;' title='Capitulo Anterior'><img src='https://lh4.googleusercontent.com/-wqHKkAVgKCo/UP7_NqBnEYI/AAAAAAAAC7s/fZ-xMPBwbZY/s15/izquierda.JPG' /></a><a class='tip' href='"+siguiente +"' style='float: right; margin-right:11px;' title='Capitulo Siguiente'><img src='https://lh5.googleusercontent.com/-g1u6bHt9ps4/UP7_NilYMMI/AAAAAAAAC7o/mEuOQ9M5iDY/s15/derecha.JPG' /></a></div></center>");
+}
+
+function lista(link) {
+document.write("<a href='"+link +"' id='tensei-lista'>Ver todos los capÃ­tulos</a>");
+}
+
+function videobb(videobb) {
+  var output = "<object id=\"player\" width=\"850\" height=\"475\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" >";
+  output += "<param name=\"movie\" value=\"http://www.videobb.com/e/" + videobb + "\" >";
+  output += "</param>";
+  output += "<param name=\"allowFullScreen\" value=\"true\" >";
+  output += "</param>";
+  output += "<param name=\"allowscriptaccess\" value=\"always\">";
+  output += "</param>";
+  output += "<embed src=\"http://www.videobb.com/e/" + videobb + "\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"850\" height=\"475\">";
+  output += "</embed>";
+  output += "</object>";
+  document.write (output);
+}
+
+function dailymotion(IDdailymotion) {
+  var output = "<object width='670' height='400'>";
+  output += "<param name='movie' value='http://www.dailymotion.com/swf/video/"+IDdailymotion+"'></param>";
+  output += "<param name='allowFullScreen' value='true'></param>";
+  output += "<param name='allowScriptAccess' value='always'></param>";
+  output += "<embed type='application/x-shockwave-flash' src='http://www.dailymotion.com/swf/video/"+IDdailymotion+"' width='670' height='400' allowfullscreen='true' allowscriptaccess='always'>";
+  output += "</embed></object>";
+  document.write (output);
+}
+
+function verzend(IDverzend) {
+  var output = "<iframe title=\"verzend video player\" width=\"850\" height=\"475\" src=\"http://verzend.be/" + IDverzend + ".html\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function vidbull(IDvidbull) {
+  var output = "<iframe title=\"vidbull video player\" width=\"850\" height=\"475\" src=\"http://vidbull.com/" + IDvidbull + ".html\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function videobam(IDvideobam) {
+  var output = "<center><iframe allowNetworking=\"internal\" src=\"http://videobam.com/widget/" + IDvideobam + "/custom/670\" width=\"670\" height=\"400\" frameborder=\"0\" scrolling=\"no\">";
+  output += "</iframe></center>";
+  document.write (output);
+}
+
+function modovideo(IDmodovideo) {
+  var output = "<iframe src=\"http://www.modovideo.com/frame.php?v=" + IDmodovideo + "\" width=\"850\" height=\"475\" frameborder=\"0\">";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function novamov(IDnovamov) {
+  var output = "<iframe title=\"novamov video player\" width=\"670px;\" height=\"400px;\" src=\"http://embed.novamov.com/embed.php?width=670&amp;height=400&amp;v=" + IDnovamov + "&amp;px=1\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function veevr(veevr) {
+  var output = "<iframe src=\"http://veevr.com/embed/" + veevr + "?w=850&amp;h=475\" width=\"850\" height=\"475\" scrolling=\"no\" frameborder=\"0\">";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function nowvideo(nowvideo) {
+  var output = "<iframe src=\"http://embed.nowvideo.eu/embed.php?v=" + nowvideo + "&amp;width=670&amp;height=400\" width=\"670\" height=\"400\" scrolling=\"no\" frameborder=\"0\">";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function mediafire(IDmediafire) {
+  var output = "<center><iframe src=\"http://veranimesonline.com/frans/stream/mediafire.php?id=" + IDmediafire + "\" width=\"850\" height=\"475\" scrolling=\"no\" frameborder=\"0\">";
+  output += "</iframe></center>";
+  document.write (output);
+}
+
+function jokeroo(jokeroo) {
+  var output = "<object id=\"player\" width=\"850\" height=\"475\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" >";
+  output += "<param name=\"movie\" value=\"http://www.jokeroo.com/bin/player.swf?" + jokeroo + "\" >";
+  output += "</param>";
+  output += "<param name=\"allowFullScreen\" value=\"true\" >";
+  output += "</param>";
+  output += "<param name=\"allowscriptaccess\" value=\"always\">";
+  output += "</param>";
+  output += "<embed src=\"http://www.jokeroo.com/bin/player.swf?" + jokeroo + "\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"850\" height=\"475\">";
+  output += "</embed>";
+  output += "</object>";
+  document.write (output);
+}
+
+function moevideo(moevideo) {
+  var output = "<object id=\"player\" width=\"850\" height=\"475\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" >";
+  output += "<param name=\"movie\" value=\"http://moevideo.net/swf/letplayerflx3.swf?file=" + moevideo+ "&amp;width=565amp;height=475\" >";
+  output += "</param>";
+  output += "<param name=\"allowFullScreen\" value=\"true\" >";
+  output += "</param>";
+  output += "<param name=\"allowscriptaccess\" value=\"always\">";
+  output += "</param>";
+  output += "<embed src=\"http://moevideo.net/swf/letplayerflx3.swf?file=" + moevideo+ "&amp;width=850&amp;height=475\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"850\" height=\"475\">";
+  output += "</embed>";
+  output += "</object>";
+  document.write (output);
+}
+
+function vk(IDvk) {
+  var output = "<center><iframe title=\"vk video player\" width=\"670\" height=\"400\" src=\"http://vk.com/video_ext.php?oid=" + IDvk + "\" frameborder=\"0\"  allowfullscreen>";
+  output += "</iframe></center>";
+  document.write (output);
+}
+
+function put(put) {
+  var output = "<center><iframe title=\"Putlocker player\" width=\"670\" height=\"400\" src=\"http://www.putlocker.com/embed/" + put + "\" frameborder=\"0\"  allowfullscreen>";
+  output += "</iframe></center>";
+  document.write (output);
+}
+
+function allmyvideos(IDallmyvideos) {
+  var output = "<iframe title=\"vk video player\" width=\"850\" height=\"475\" src=\"http://allmyvideos.net/" + IDallmyvideos + "\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function videoweed(videoweed) {
+  var output = "<iframe title=\"vk video player\" width=\"670\" height=\"400\" src=\"http://embed.videoweed.es/embed.php?v=" + videoweed + "&amp;width=100%&amp;height=318\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function movzap(IDmovzap) {
+  var output = "<iframe title=\"movzap video player\" width=\"670\" height=\"400\" src=\"http://movzap.com/embed/" + IDmovzap + "\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function vidxden(IDvidxden) {
+  var output = "<iframe title=\"vidxden video player\" width=\"850\" height=\"475\" src=\"http://www.vidxden.com/" + IDvidxden + "&amp;width=550&amp;height=340\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function tutvnew (IDtutvnew) {
+  var output = "<iframe title=\"tutvnew video player\" width=\"850\" height=\"475\" src=\"http://tu.tv/iframe/" + IDtutvnew + "/\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function vreer(IDvreer) {
+  var output = "<iframe title=\"vreer video player\" width=\"850\" height=\"475\" src=\"http://vreer.com/" + IDvreer + "\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function uploadboost(IDuploadboost) {
+  var output = "<iframe title=\"uploadboost video player\" width=\"850\" height=\"475\" src=\"http://www.uploadboost.com/" + IDuploadboost + "&amp;width=550&amp;height=340\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function facebook(facebook) {
+  var output = "<object id=\"player\" width=\"850\" height=\"475\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" >";
+  output += "<param name=\"movie\" value=\"http://www.facebook.com/photo.php?v=" + facebook + "\" >";
+  output += "</param>";
+  output += "<param name=\"allowFullScreen\" value=\"true\" >";
+  output += "</param>";
+  output += "<param name=\"allowscriptaccess\" value=\"always\">";
+  output += "</param>";
+  output += "<embed src=\"http://www.facebook.com/photo.php?v=" + facebook + "\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"850\" height=\"475\">";
+  output += "</embed>";
+  output += "</object>";
+  document.write (output);
+}
+
+function tutv(tutv) {
+  var output = "<object id=\"player\" width=\"850\" height=\"475\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" >";
+  output += "<param name=\"movie\" value=\"http://tu.tv/tutvweb.swf?" + tutv  + "\" >";
+  output += "</param>";
+  output += "<param name=\"allowFullScreen\" value=\"true\" >";
+  output += "</param>";
+  output += "<param name=\"allowscriptaccess\" value=\"always\">";
+  output += "</param>";
+  output += "<embed src=\"http://tu.tv/tutvweb.swf?" + tutv + "\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"850\" height=\"475\">";
+  output += "</embed>";
+  output += "</object>";
+  document.write (output);
+}
+
+function rutube(rutube) {
+  var output = "<iframe title=\"rutube video player\" width=\"850\" height=\"475\" src=\"http://rutube.ru/video/embed/" + rutube + "\" frameborder=\"0\" allowfullscreen>";
+  output += "</iframe>";
+  document.write (output);
+}
+
+function vimeo(vimeo) {
+    
+  var output = "<object type='application/x-shockwave-flash' style='width: 850px;height: 475px;' data='http://vimeo.com/moogaloop.swf?clip_id="+ vimeo +"&server=vimeo.com&show_title=1&show_byline=1&show_portrait=0&color=00adef&fullscreen=1' width='850' height='475'>";
+    output +=  "<param name='wmode' value='transparent'>";
+    output +=  "<param name='allowFullScreen' value='true'>";
+  output += "</object>";
+  document.write (output);
+}
+
+function youtube(IDyoutube) {
+  var output = "<object width='850' height='475'><param name='movie' value='//www.youtube.com/v/"+ IDyoutube +"?hl=es_ES&amp;version=3&amp;rel=0'></param><param name='allowFullScreen' value='true'></param><param name='allowscriptaccess' value='always'></param><embed src='//www.youtube.com/v/"+ IDyoutube +"?hl=es_ES&amp;version=3&amp;rel=0' type='application/x-shockwave-flash' width='850' height='475' allowscriptaccess='always' allowfullscreen='true'>";
+  output += "</embed></object>";
+  document.write (output);
+}
+
+function zippyshare(IDzippy) {
+  var output = "<embed name='flashplayer' src='http://ddhentaid2.comoj.com/player.swf' flashvars='plugins=http://ddhentaid2.comoj.com/plugins/proxy.swf&amp;proxy.link="+ IDzippy +"' type='application/x-shockwave-flash' allowfullscreen='true' allowscriptaccess='always' height='400' width='670'>";
+   output += "</br><center><span style='font-size:13px;'><b>Si tienes problemas al visualizar el video, puedes ver el anime en su enlace <a href=\"" + IDzippy + "\" target=\"_new\" style=\"color:#FF0000;overflow:hidden;\">Externo</a></b></span> </center>";
+  document.write (output);
+}
+
+function id(id) {
+  var output = "<object id=\"player\" width=\"670\" height=\"400\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" >";
+  output += "<param name=\"movie\" value=\"https://dl.dropboxusercontent.com/u/240161376/repromp4/player.swf\">";
+  output += "</param>";
+  output += "<param name=\"allowFullScreen\" value=\"true\" >";
+  output += "</param>";
+  output += "<param name=\"allowscriptaccess\" value=\"always\">";
+  output += "</param>";
+  output += "<embed flashvars=\"file=" + id + "&provider=video&stretching=exactfit&controlbar.position=over\" src=\"https://dl.dropboxusercontent.com/u/240161376/repromp4/player.swf\"  type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"850\" height=\"475\">";
+  output += "</embed>";
+  output += "</object>";
+  document.write (output);
+}
+
+function ids(IDanimeid) {
+  var output = "<object id=\"player\" width=\"670\" height=\"400\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" >";
+  output += "<param name=\"movie\" value=\"https://dl.dropboxusercontent.com/u/240161376/repromp4/player.swf\" >";
+  output += "</param>";
+  output += "<param name=\"allowFullScreen\" value=\"true\" >";
+  output += "</param>";
+  output += "<param name=\"allowscriptaccess\" value=\"always\">";
+  output += "</param>";
+  output += "<embed flashvars=\"file=http://www.animeid.tv/stream/" + IDanimeid + ".mp4&provider=video&stretching=exactfit&controlbar.position=over\" src=\"https://dl.dropboxusercontent.com/u/240161376/repromp4/player.swf\"  type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"670\" height=\"400\">";
+  output += "</embed>";
+  output += "</object>";
+  document.write (output);
+}
+
+function bam(IDvideobam) {
+  var output = "<object id=\"player\" width=\"670\" height=\"400\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" >";
+  output += "<param name=\"movie\" value=\"http://animegl.comeze.com/player.swf\" >";
+  output += "</param>";
+  output += "<param name=\"allowFullScreen\" value=\"true\" >";
+  output += "</param>";
+  output += "<param name=\"allowscriptaccess\" value=\"always\">";
+  output += "</param>";
+  output += "<param name=\"FlashVars\" value=\"plugins=http://animegl.comeze.com/proxy.swf&amp;proxy.link=" + IDvideobam + "\">";
+  output += "</param>";
+  output += "<embed name=\"flashplayer\" src=\"http://animegl.comeze.com/player.swf\" flashvars=\"plugins=http://animegl.comeze.com/proxy.swf&amp;proxy.link=" + IDvideobam + "\" type=\"application/x-shockwave-flash\" allowfullscreen=\"true\" allowscriptaccess=\"always\" width=\"670\" height=\"400\">";
+  output += "</embed>";
+  output += "</object>";
+  document.write (output);
+}
+
+function videomega(IDvideomega) {
+  var output = "<iframe src=\"http://videomega.tv/iframe.php?ref=" + IDvideomega + "\" type=\"text/html\" allowfullscreen=\"true\" frameborder=\"0\" height=\"475\" scrolling=\"no\" width=\"850\"></iframe>";
+  output += "</br><center><span style='font-size:13px;'><b>Si tienes problemas al visualizar el video, puedes ver el anime en su enlace <a href=\"http://videomega.tv/?ref=" + IDvideomega + "\" target=\"_new\" style=\"color:#FF0000;overflow:hidden;\">Externo</a></b></span> </center>";
+  document.write (output);
+}
+
+function allmy(IDallmyvideos) {
+  var output = "<iframe src=\"http://allmyvideos.net/embed-" + IDallmyvideos + ".html\" frameborder=\"0\" marginwidth=0 marginheight=0 scrolling=\"NO\" allowfullscreen='true' width=850 height=475></iframe>";
+  output += "</br><center><span style='font-size:13px;color;#000;'><b>Si tienes problemas al visualizar el video, puedes ver el anime en su enlace <a href=\"http://allmyvideos.net/" + IDallmyvideos + ".html\" target=\"_new\" style=\"color:#FF0000;overflow:hidden;\">Externo</a></b></span> </center>";
+  document.write (output);
+}
+
+function picasa(IDpicasaweb) {
+var output = "<embed name=\"flashplayer\" src=\"http://ddhentaid3.net16.net/player.swf\" FlashVars=\"plugins=http://ddhentaid3.net16.net/plugins/proxy.swf&proxy.link=https://picasaweb.google.com/lh/photo/" + IDpicasaweb + "\" type=\"application/x-shockwave-flash\" allowfullscreen=\"true\" allowScriptAccess=\"always\" width=\"670\" height=\"400\" />";
+document.write (output);
+}
+
+function share(a){
+var video= a; 
+document.write('<embed src="http://static.4shared.com/flash/player/5.6/player.swf?file='+video+'&streamer='+video+'&image=&logo.position=top-left&amp;autostart=false&amp;backcolor=000000&amp;frontcolor=FFFFFF&amp;lightcolor=FFFFFF&amp;screencolor=000000" width="850" height="475" allowfullscreen="true" allowscriptaccess="always" type="application/x-shockwave-flash"></embed>');}
+
+function elanime(IDanime) {
+  var output = "<embed name='flashplayer' src='http://www.elanime.net/nn/player.swf' bgcolor='#000' type='application/x-shockwave-flash' pluginspage='http://www.macromedia.com/go/getflashplayer' flashvars='file=http://www.elanime.net/nn/mark-42.php?data=" + IDanime + "%3D%3D&amp;provider=video&amp;abouttext=El Anime Player&amp;controlbar=bottom&amp;stretching=exactfit&amp;screencolor=000&amp;plugins=backstroke-1,timeslidertooltipplugin-1' height='475' width='850' allowfullscreen='true' allowscriptaccess='always'> ";
+  document.write (output);
+}
